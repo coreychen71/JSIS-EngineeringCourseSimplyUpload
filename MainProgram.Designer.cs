@@ -39,6 +39,7 @@
             this.lblMas = new System.Windows.Forms.Label();
             this.lblDtl = new System.Windows.Forms.Label();
             this.lblExplain = new System.Windows.Forms.Label();
+            this.lblUser = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMasShow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDtlShow)).BeginInit();
             this.SuspendLayout();
@@ -73,9 +74,9 @@
             // btnDot
             // 
             this.btnDot.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnDot.Location = new System.Drawing.Point(612, 15);
+            this.btnDot.Location = new System.Drawing.Point(612, 19);
             this.btnDot.Name = "btnDot";
-            this.btnDot.Size = new System.Drawing.Size(40, 34);
+            this.btnDot.Size = new System.Drawing.Size(40, 29);
             this.btnDot.TabIndex = 3;
             this.btnDot.Text = "...";
             this.btnDot.UseVisualStyleBackColor = true;
@@ -84,9 +85,9 @@
             // btnLoad
             // 
             this.btnLoad.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnLoad.Location = new System.Drawing.Point(662, 14);
+            this.btnLoad.Location = new System.Drawing.Point(662, 19);
             this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(110, 35);
+            this.btnLoad.Size = new System.Drawing.Size(110, 29);
             this.btnLoad.TabIndex = 4;
             this.btnLoad.Text = "載入資料";
             this.btnLoad.UseVisualStyleBackColor = true;
@@ -94,13 +95,15 @@
             // 
             // btnUpload
             // 
+            this.btnUpload.BackColor = System.Drawing.Color.DarkMagenta;
             this.btnUpload.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnUpload.ForeColor = System.Drawing.Color.White;
             this.btnUpload.Location = new System.Drawing.Point(662, 98);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(110, 35);
             this.btnUpload.TabIndex = 5;
             this.btnUpload.Text = "開始上傳";
-            this.btnUpload.UseVisualStyleBackColor = true;
+            this.btnUpload.UseVisualStyleBackColor = false;
             this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
             // dgvDtlShow
@@ -142,12 +145,23 @@
             this.lblExplain.TabIndex = 9;
             this.lblExplain.Text = "＊請先將資料載入，確認無誤後，再進行上傳！";
             // 
+            // lblUser
+            // 
+            this.lblUser.AutoSize = true;
+            this.lblUser.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblUser.Location = new System.Drawing.Point(514, 105);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(92, 20);
+            this.lblUser.TabIndex = 10;
+            this.lblUser.Text = "（UserID）";
+            // 
             // MainProgram
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(784, 601);
+            this.Controls.Add(this.lblUser);
             this.Controls.Add(this.lblExplain);
             this.Controls.Add(this.lblDtl);
             this.Controls.Add(this.lblMas);
@@ -182,6 +196,7 @@
         private System.Windows.Forms.Label lblMas;
         private System.Windows.Forms.Label lblDtl;
         private System.Windows.Forms.Label lblExplain;
+        private System.Windows.Forms.Label lblUser;
     }
 }
 
